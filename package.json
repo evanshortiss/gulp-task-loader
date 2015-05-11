@@ -1,0 +1,29 @@
+{
+  "name": "gulp-task-loader",
+  "version": "0.0.0",
+  "description": "An intelligent gulp task loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.js",
+    "lint": "jshint ./test/*.js ./index.js"
+  },
+  "keywords": [
+    "gulp",
+    "task",
+    "load",
+    "loader",
+    "subtask",
+    "sub"
+  ],
+  "author": "Evan Shortiss",
+  "license": "MIT",
+  "dependencies": {
+    "fhlog": "^0.12.1"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "gulp": "^3.8.11",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4"
+  }
+}
