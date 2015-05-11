@@ -10,7 +10,7 @@ module.exports = {
 };
 
 
-function remapLogLevel () {
+function remapLogLevel (lvl) {
   var map = {
     'info': 'INF',
     'debug': 'DBG',
@@ -38,14 +38,11 @@ function loadTasks (opts) {
     throw new Error('"dir" option not provided to gulp-task-loader');
   }
 
-  // Set our logger to debug by default
-  if (opts.logLevel) {
-    log.setLogLevel(
-      remapLogLevel(opts.logLevel)
-    );
-  } else {
-    log.setSilent(true);
-  }
+  // Set our logger to warn by default
+  log.setLogLevel(
+    remapLogLevel(opts.logLevel) || log.LEVELS.WRN
+  );
+
 
   log.d('Reading tasks in folder %s', taskDir);
 

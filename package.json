@@ -1,7 +1,7 @@
 {
   "name": "gulp-task-loader",
   "version": "0.0.0",
-  "description": "An intelligent gulp task loader",
+  "description": "Load gulp tasks like a boss",
   "main": "index.js",
   "scripts": {
     "test": "mocha ./test/*.js",
